@@ -1,0 +1,191 @@
+body{
+    font-size: 18px;
+    font-family: 'BenchNine', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+/*Estilos del Header*/
+header{
+    align-items: center;
+    background-color: #5e35b1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 15vh;
+    width: 100%;
+}
+.contenedroLogo{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    
+}
+.logo{
+    height: 15vh;
+}
+h1{
+    color:#ffffff;
+}
+h1::selection{
+    color: yellow;
+}
+h1::after{
+    position: relative;
+    left: -20px;
+    content: 🤖;
+}
+header nav a{
+    color: #ffffff;
+    font-size: 1.5rem;
+    height: 15vh;
+    text-decoration: none;
+}
+header nav a:hover{
+    background-color: #d1c4e9;
+    color: #000000;
+}
+nav{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    height: 15vh;
+    width: 50%;
+}
+.tamañoIconos{
+    font-size: 36px !important;
+}
+.aFlex{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 200px;
+    padding: 0 10px;
+}
+.settingsFlex{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+/*Estilos Main*/
+aside{
+    align-items: flex-start;
+    background-color: #9575cd;
+    display: flex;
+    float: left;
+    flex-direction: column;
+    height: 75vh;
+    width: 15%;
+}
+main aside a{
+    align-items: center;
+    color: #000000;
+    display: flex;
+    flex-direction: row;
+    font-size: 1.5rem;
+    justify-content: flex-start;
+    padding: 10px 0;
+    text-decoration: none;
+    width: 100%;
+}
+main aside a:hover{
+    background-color: #673ab7;
+}
+.margenSpan{
+    margin: 0 20px;
+}
+section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    float: right;
+    height: 75vh;
+    width: 85%;
+    overflow-y: scroll;
+}
+section img{
+    max-height: 190px;
+    transition: all 2s;
+}
+section img:nth-child(1):hover{
+    transform: translateX(20px);
+    filter: sepia(100%);
+}
+section img:nth-child(2):hover{
+    transform: rotate(20deg);
+}
+section img:nth-child(even){
+    filter: grayscale(100%);
+}
+section img:nth-child(9){
+    filter: blur(5px);
+}
+section img:hover{
+    filter: blur(0px);
+}
+/*Estilos Footer*/
+footer{
+    align-items: center;
+    background-color: #5e35b1;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    bottom: 0;
+    justify-content: center;
+    height: 10vh;
+    width: 100%;
+}
+footer p, footer a{
+    color: #ffffff;
+}
+footer p::first-letter{
+    font-size: 50px;
+}
+
+/*Media Querys*/
+@media screen and (max-width:768px){
+    main aside a{
+        flex-direction: column;
+    }
+    section img{
+        max-height: 170px;
+    }
+}
+@media screen and (max-width:400px){
+    h1{
+        font-size: 1.3rem;
+    }
+    .novisible{
+        /* display: none; */
+        visibility: hidden;
+    }
+    .aFlex{
+        flex-direction: row-reverse;
+    }
+    nav{
+        flex-direction: row-reverse;
+    }
+    .settingsFlex{
+        padding-left: 0;
+    }
+    main aside a{
+        font-size: 0.9rem;
+    }
+    aside, section{
+        height: 80vh;
+    }
+    footer{
+        align-items: baseline;
+    }
+    footer p{
+        font-size: 0.9rem;
+    }
+    .reduceicono{
+        font-size: 24px !important;
+    }
+}

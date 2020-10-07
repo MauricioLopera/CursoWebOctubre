@@ -1,0 +1,48 @@
+body{
+    background-color: #ffffff;
+    font-size: 18px;
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header, footer{
+    background-color: #7bbcfa;
+    height: 10vh;
+    width: 100%;
+}
+h1{
+    display: inline;
+    margin: 10px 0 0 20px;
+}
+nav{
+    display: inline;
+    position: relative;
+    left: 700px;
+}
+aside{
+    background-color: #a2fdb9;
+    float: left;
+    height: 80vh;
+    width: 20%;
+}
+main{
+    background-color: #fada95;
+    float: right;
+    height: 80vh;
+    width: 80%;
+}
+footer{
+    position: fixed;
+    bottom: 0;
+}
+.boton{
+    background-color: #30379c;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 2rem;
+    padding: 5px 30px;
+    position: absolute;
+    top: 200px;
+    left: 600px;
+    height: 50px;
+}

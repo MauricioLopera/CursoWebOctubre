@@ -1,0 +1,16 @@
+body{
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+}
+.columnas{
+    background-color: #000000;
+    border: 1px solid #ffffff;
+    height: 100px;
+}
+.heightdiv{
+    height: 100px;
+}
+.rowsinmag{
+    margin-bottom: 0;
+}

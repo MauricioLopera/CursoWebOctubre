@@ -1,0 +1,47 @@
+/*Apuntadores CSS de Etiqueta*/
+body{
+    background-color: #ffffff;
+    font-size: 18px;
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header{
+    border: 5px  solid #020202;
+    margin: 0;
+    padding: 50px 100px;
+}
+h1{
+    display:inline;
+    margin: 0;
+}
+nav{
+    /*border: 5px solid #000000;*/
+    display:inline;
+    margin-left: 200px;
+}
+a{
+    color: #000000;
+    margin-left: 50px;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+/*Apuntador de etiquetas anidadas (Aplica solo a la etiquta que esta mas a la derecha en este caso li*/
+ul{
+    margin: 0;
+}
+ul li{
+    color: brown;
+}
+
+/*Apuntadores de Clase (Selectivos a los que yo quiera ponerles)*/
+.quitaMargenL{
+    margin-left: 0;
+}
+
+/*Apuntadores de Id (Utiliza el atributo id de las etiquetas HTML)*/
+#contenedor{
+    background-color: aquamarine;
+    height: 400px;
+    width: 100%;
+}

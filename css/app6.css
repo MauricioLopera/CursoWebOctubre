@@ -1,0 +1,21 @@
+body{
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+}
+.alfijohyf{
+    height: 10vh;
+}
+.alfijoarea{
+    height: 80vh;
+}
+.sinmargen{
+    margin-bottom: 0;
+}
+h1{
+    font-size: 2rem;
+    margin: 0;
+}
+.logo{
+    height: 10vh !important;
+}
